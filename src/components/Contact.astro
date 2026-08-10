@@ -1,0 +1,172 @@
+---
+---
+<section id="contacto" class="contact">
+  <div class="container">
+    <div class="contact-grid animate-on-scroll">
+      <div class="contact-info">
+        <h2>Contactame</h2>
+        <p class="contact-desc">Cada obra comienza con un diálogo. Cuéntame sobre tu visión, el espacio que deseas transformar o la idea que quieres materializar, y diseñaremos una pieza escultórica única.</p>
+        
+        <div class="info-items">
+          <div class="info-item">
+            <span class="info-label">Email</span>
+            <p><a href="mailto:email@gmail.com">email@gmail.com</a></p>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Teléfono</span>
+            <p><a href="tel:+34600000000">+34 000 000 000</a></p>
+          </div>
+          <div class="info-item">
+            <span class="info-label">Estudio</span>
+            <p><a href="https://www.google.com/maps/place/Calle+del+Factor,+6,+Centro,+28013+Madrid/@40.4156264,-3.7130362,19z/data=!3m1!4b1!4m6!3m5!1s0xd422879cfd1851f:0x35ccd9889b0ff21c!8m2!3d40.4156264!4d-3.7123925!16s%2Fg%2F11cnd8r1xl?entry=ttu&g_ep=EgoyMDI2MDgwNS4xIKXMDSoASAFQAw%3D%3D">Calle XXXXXX, Madrid, España</a></p>
+          </div>
+          <div class="map">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d759.4235313501465!2d-3.713036230390925!3d40.41562639821499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422879cfd1851f%3A0x35ccd9889b0ff21c!2sCalle%20del%20Factor%2C%206%2C%20Centro%2C%2028013%20Madrid!5e0!3m2!1sen!2ses!4v1786390187551!5m2!1sen!2ses" width="100%" height="370" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      
+      
+      <div class="contact-form-container">
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Nombre / Organización</label>
+            <input type="text" id="name" name="name" placeholder="Sara" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="project">Tipo de Encargo</label>
+            <select id="project" name="project">
+              <option value="monumental">Escultura Monumental (Pública/Corporativa)</option>
+              <option value="privado">Colección Privada</option>
+              <option value="retrato">Retrato Escultórico</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Comunicado</label>
+            <textarea id="message" name="message" rows="5" placeholder="Descripción del encargo" required></textarea>
+          </div>
+          <button type="submit" class="send-btn">Enviar Consulta</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .contact {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+  }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: stretch; /* Estira los elementos para que todos midan lo mismo */
+  }
+
+  .contact-info h2 {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-desc {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .info-label {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    color: var(--color-accent);
+    margin-bottom: 0.2rem;
+  }
+
+  .info-item p {
+    margin: 0;
+    color: var(--color-text-main);
+  }
+
+  .info-item a:hover {
+    color: var(--color-accent);
+  }
+
+  .map {
+    border: 1px solid var(--color-border);
+  }
+
+  .contact-form-container {
+    background: var(--color-surface);
+    padding: 3rem;
+    border: 1px solid var(--color-border);
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-text-main--dark-blue);
+    font-size: 0.9rem;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 1rem;
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    color: var(--color-text-main);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    transition: var(--transition-smooth);
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--color-accent);
+  }
+
+  .send-btn {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+    font-family: var(--font-body);
+    background: var(--color-bg);
+    color: var(--color-text-main--dark-blue);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+    cursor: pointer;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  button:hover {
+    background-color: var(--color-accent);
+    color: var(--color-bg) !important;
+  }
+
+  @media (max-width: 992px) {
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+  }
+</style>

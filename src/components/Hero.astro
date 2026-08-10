@@ -1,0 +1,132 @@
+---
+---
+<section class="hero">
+  <div class="hero-bg">
+    <!-- Using a placeholder pattern that looks like stone texture -->
+    <div class="texture"></div>
+  </div>
+  <div class="container hero-content animate-on-scroll">
+    <h1>Beatriz <span>Gove Art</span></h1>
+    <p class="subtitle">Dando forma a la materia para materializar tu visión. Obras únicas, personalizadas y de alto valor estético.</p>
+    <div class="actions">
+      <a href="#galeria" class="btn btn-outline">Ver Portafolio</a>
+      <a href="#contacto" class="btn btn-primary">Solicitar Encargo</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px; /* offset for header */
+    overflow: hidden;
+  }
+
+  .hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: var(--color-bg);
+    background-image: 
+      linear-gradient(rgba(15, 15, 15, 0.7), rgba(15, 15, 15, 0.85)),
+      url('../assets/gove-art-hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .texture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.08;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0IiBoZWlnaHQ9IjQiPgo8cmVjdCB3aWR0aD0iNCIgaGVpZ2h0PSI0IiBmaWxsPSIjZmZmIiBmaWxsLW9wYWNpdHk9IjAuMDUiLz4KPC9zdmc+');
+    background-size: 4px 4px;
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+  }
+
+  .hero h1 {
+    font-size: 4.5rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: var(--color-hero-main);
+  }
+
+  .hero h1 span {
+    display: block;
+    color: var(--color-accent);
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: var(--color-hero-main);
+    opacity: 0.8;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .actions {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .btn {
+    padding: 1rem 2.5rem;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: var(--transition-smooth);
+    cursor: pointer;
+  }
+
+  .btn-primary {
+    background: var(--color-accent);
+    color: var(--color-bg);
+    border: 1px solid var(--color-accent);
+  }
+
+  .btn-primary:hover {
+    background: transparent;
+    color: var(--color-accent);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--color-hero-main);
+    border: 1px solid var(--color-border);
+  }
+
+  .btn-outline:hover {
+    border-color: var(--color-hero-main);
+  }
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .actions {
+      flex-direction: column;
+    }
+  }
+</style>

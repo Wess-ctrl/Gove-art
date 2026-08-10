@@ -1,0 +1,125 @@
+---
+---
+<section id="biografia" class="biography bg-surface">
+  <div class="container biografia-grid">
+    <div class="bio-image animate-on-scroll">
+      <div class="image-placeholder">
+        <span>Foto Profesional</span>
+      </div>
+      <div class="decorative-border"></div>
+    </div>
+    
+    <div class="bio-text animate-on-scroll">
+      <h2>Biografía Profesional</h2>
+      <p class="lead">Escultora, nace en Madrid en 1962, aunque su formación se realiza en Las Palmas de Gran Canaria y en el Reino Unido.</p>
+      
+      <p>Desde su primera exposición en 1986 y hasta hoy, GOVE ha participado individual o colectivamente en exposiciones en galerías y ferias de arte en Europa, América Central, Norteamérica, y Asia.</p>
+      
+      <p>Complementariamente y dándole a su obra una trascendencia que pretende ser además humanista y social, ha participado en varios congresos de arte y ha aportado su experiencia artística a proyectos y actividades colectivas y cívicas: Diseño y ejecución de Proyecto: “Viendo con las manos mi ciudad” para la ONCE en colaboración con el ayuntamiento de Las Palmas de G.C. Con el Lycee Francés de Las Palmas y Madrid, ha realizado proyectos artísticas con su alumnado. Artista Comunitaria en Bedmister Community Center en Bristol, U.K. Monitor de Arte en el Centro Newbridge para la Reinserción de Delincuentes Juveniles en sustitución a penas de cárcel en Bath, U.K, etc.</p>
+
+      <p>Su conjunción con el mundo de la Arquitectura ha hecho que Instituciones Publicas y Privadas hayan seleccionado su obra para incorporarla en edificios o espacios públicos. A partir de 2014, se centra en un trabajo más íntimo y personal que combina con clases de escultura en su taller de Madrid.</p>
+      
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-num">15+</span>
+          <span class="stat-label">Años de Exp.</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Obras Entregadas</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">12</span>
+          <span class="stat-label">Premios</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .biografia-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .bio-image {
+    position: relative;
+    padding: 2rem 0 0 2rem;
+  }
+
+  .image-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    color: var(--color-text-main--dark-blue);
+    font-style: italic;
+  }
+
+  .decorative-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 2rem);
+    height: calc(100% - 2rem);
+    border: 1px solid var(--color-accent);
+    z-index: 1;
+  }
+
+  .lead {
+    color: var(--color-text-main--dark-blue);
+    /* font-weight: 300; */
+    margin-bottom: 2rem;
+  }
+
+  .stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stat-num {
+    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    color: var(--color-accent);
+    line-height: 1;
+  }
+
+  .stat-label {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-text-main--dark-blue);
+    margin-top: 0.5rem;
+  }
+
+  @media (max-width: 992px) {
+    .biografia-grid {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    .bio-image {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+</style>

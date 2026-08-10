@@ -1,0 +1,152 @@
+---
+const works = [
+  {
+    title: "El Despertar de la Materia",
+    year: "2023",
+    material: "Bronce Patinado",
+    description: "Una obra monumental encargada para la plaza principal del centro cultural. Representa la evolución humana a través de formas orgánicas entrelazadas. El proceso tomó 8 meses desde los primeros bocetos hasta la fundición final.",
+    client: "Ayuntamiento Local",
+    image: "https://images.unsplash.com/photo-1576016770956-debb63d900bb?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    title: "Vuelo Estático",
+    year: "2022",
+    material: "Mármol de Carrara",
+    description: "Encargo privado para el lobby de una sede corporativa. La pieza explora la tensión entre el peso del material y la ligereza visual de las formas inspiradas en el movimiento de las aves.",
+    client: "X",
+    image: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800"
+  }
+];
+---
+<section id="obras-destacadas" class="featured-works">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h2>Obras Destacadas</h2>
+      <p>Una selección de los encargos más significativos y desafiantes.</p>
+    </div>
+
+    <div class="works-list">
+      {works.map((work, index) => (
+        <div class={`work-card ${index % 2 !== 0 ? 'reverse' : ''} animate-on-scroll`}>
+          <div class="work-image-container">
+            <div class="work-image-card">
+              <img src={work.image} alt={work.title} loading="lazy" />
+            </div>
+          </div>
+          <div class="work-details">
+            <div class="work-meta">
+              <span>{work.year}</span>
+              <span class="separator">|</span>
+              <span>{work.material}</span>
+            </div>
+            <h3>{work.title}</h3>
+            <p>{work.description}</p>
+            <div class="client-info">
+              <strong>Encargo para:</strong> {work.client}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .works-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  .work-card {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .work-card.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .work-image-container {
+    flex: 1;
+    position: relative;
+  }
+
+  .work-image-card {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+    overflow: hidden;
+  }
+
+  .work-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-smooth);
+  }
+
+  .work-card:hover .work-image-card {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .work-card:hover .work-image-card img {
+    transform: scale(1.03);
+  }
+
+  .work-details {
+    flex: 1;
+  }
+
+  .work-meta {
+    font-size: 0.85rem;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .separator {
+    color: var(--color-border);
+  }
+
+  .work-details h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .work-details p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .client-info {
+    font-size: 0.9rem;
+    color: var(--color-text-main--dark-blue);
+    padding-top: 1rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .client-info strong {
+    color: var(--color-text-main);
+  }
+
+  @media (max-width: 992px) {
+    .work-card, .work-card.reverse {
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+</style>

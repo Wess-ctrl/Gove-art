@@ -1,0 +1,426 @@
+---
+const categories = [
+  {
+    id: "Papel",
+    name: "Papel",
+    date: "2017",
+    description: "Estas obras en papel surgen tras años de experimentación tanto formal como técnica. La idea de trabajar el papel como escultura va tomando forma lentamente, pasando de ser soporte para dibujo, acuarela, maquetas o plantillas, a usarlo como material escultórico definitivo. Un homenaje a quien ha sido gran compañero, silencioso y sin pretensiones. Técnicamente, son obras únicas forjadas con agua y calor de una sola lámina de papel de hasta 9 metros de longitud o combinando varias. Sin colas o amarres y realizadas en papel de acuarela Arches. El uso del papel como material para esculturas de gran formato, es decir, tridimensional, ha sido para mi una manera de liberarme de ciertas ideas preconcebidas , cambiar la idea del papel como material bidimensional y /o para pequeño formato. Significa replantearse los limites de a donde podemos llegar, así como a cuestionar lo aprendido y a romper barreras. El papel así , se nos presenta puro, sin aditivos, ni pegamentos, ni cuerdas, etc. No necesita de artificios que lo sustenten, solo atrevernos a pensar y soñar sin limites. El papel en su estado puro se libera del plano para sorprender y mostrar que otras “formas” son posibles.",
+    images: [
+      {
+        url: "../public/gallery/papel/rocas-pedriza-caballo.jpg",
+        alt: "Escultura en arcilla de figura humana",
+        format: "square"
+      },
+      {
+        url: "../public/gallery/papel/rocas-pedriza-ventisca.webp",
+        alt: "Detalle de manos talladas en mármol",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/sueño-de-una-tela-de-verano.webp",
+        alt: "Estatua clásica representando la figura humana",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/papel-obra2.webp",
+        alt: "Torso esculpido en piedra",
+        format: "square"
+      },
+      {
+        url: "../public/gallery/papel/arches-lamina.webp",
+        alt: "Torso esculpido en piedra",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/rocas-pedriza-hera.webp",
+        alt: "Torso esculpido en piedra",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/papel-obra3.webp",
+        alt: "Torso esculpido en piedra",
+        format: "vertical"
+      },
+      {
+        url: "../public/gallery/papel/arches-cuadro.webp",
+        alt: "Torso esculpido en piedra",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/papel-obra4.webp",
+        alt: "Torso esculpido en piedra",
+        format: "square"
+      },
+      {
+        url: "../public/gallery/papel/rocas-pedriza1.webp",
+        alt: "Torso esculpido en piedra",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/rocas-pedriza2.webp",
+        alt: "Torso esculpido en piedra",
+        format: "horizontal"
+      },
+      {
+        url: "../public/gallery/papel/rocas-pedriza3.webp",
+        alt: "Torso esculpido en piedra",
+        format: "square"
+      },
+      {
+        url: "../public/gallery/papel/rocas-pedriza4.webp",
+        alt: "Torso esculpido en piedra",
+        format: "horizontal"
+      }
+    ]
+  },
+  {
+    id: "dx",
+    name: "DX, Derivadas",
+    date: "",
+    description: "Exploración de la forma, el espacio y la textura libres de representaciones figurativas, centrándose en el impacto emocional puro.",
+    images: [
+      {
+        url: "../public/gallery/papel/",
+        alt: "Obra de arte abstracto tridimensional",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Creación de formas abstractas y dinámicas",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Estructuras abstractas contemporáneas",
+        format: ""
+      }
+    ]
+  },
+  {
+    id: "tec-origami",
+    name: "Tec-Origami",
+    date: "",
+    description: "Obras de gran formato diseñadas para espacios públicos e institucionales, interactuando con la arquitectura y el entorno.",
+    images: [
+      {
+        url: "../public/gallery/papel/",
+        alt: "Escultura monumental en parque público",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Instalación artística de gran formato",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Escultura monumental e interacción espacial",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Estructura artística pública en la naturaleza",
+        format: ""
+      }
+    ]
+  },
+  {
+    id: "color",
+    name: "Color",
+    date: "",
+    description: "Obras de gran formato diseñadas para espacios públicos e institucionales, interactuando con la arquitectura y el entorno.",
+    images: [
+      {
+        url: "../public/gallery/papel/",
+        alt: "Escultura monumental en parque público",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Instalación artística de gran formato",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Escultura monumental e interacción espacial",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Estructura artística pública en la naturaleza",
+        format: ""
+      }
+    ]
+  },
+  {
+    id: "figuras",
+    name: "Figuras",
+    date: "",
+    description: "Obras de gran formato diseñadas para espacios públicos e institucionales, interactuando con la arquitectura y el entorno.",
+    images: [
+      {
+        url: "../public/gallery/papel/",
+        alt: "Escultura monumental en parque público",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Instalación artística de gran formato",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Escultura monumental e interacción espacial",
+        format: ""
+      },
+      {
+        url: "../public/gallery/papel/",
+        alt: "Estructura artística pública en la naturaleza",
+        format: ""
+      }
+    ]
+  }
+];
+---
+<section id="galeria" class="gallery bg-surface">
+  <div class="container">
+    <div class="section-header animate-on-scroll">
+      <h2>Galería por Categorías</h2>
+      <p>Explora el portafolio clasificado según la temática y el formato de las obras.</p>
+    </div>
+
+    <div class="categories-container animate-on-scroll">
+      {categories.map((cat, index) => (
+        <div class="category-item" data-cat-id={cat.id}>
+          <button class="category-header" aria-expanded={index === 0 ? "true" : "false"}>
+            <h3>{cat.name}</h3>
+            <span class="toggle-icon"></span>
+          </button>
+          
+          <div class="category-content" style={index === 0 ? "display: block;" : "display: none;"}>
+            <p class="category-date">{cat.date}</p>
+            <p class="category-desc">{cat.description}</p>
+            <div class="portfolio-grid">
+              {cat.images.map(img => (
+                <div class={`portfolio-item-card ${img.format || 'square'}`}>
+                  <img src={img.url} alt={img.alt} loading="lazy" />
+                  <div class="item-overlay">
+                    <span class="item-alt">{img.alt}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const categoryHeaders = document.querySelectorAll('.category-header');
+    
+    categoryHeaders.forEach(header => {
+      header.addEventListener('click', () => {
+        const isExpanded = header.getAttribute('aria-expanded') === 'true';
+        const content = header.nextElementSibling as HTMLElement;
+        
+        // Toggle current
+        if (isExpanded) {
+          header.setAttribute('aria-expanded', 'false');
+          content.style.display = 'none';
+        } else {
+          header.setAttribute('aria-expanded', 'true');
+          content.style.display = 'block';
+        }
+
+      });
+    });
+  });
+</script>
+
+<style>
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .categories-container {
+    max-width: 1243px;
+    margin: 0 auto;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .category-item {
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .category-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: var(--color-text-main);
+    text-align: left;
+    transition: var(--transition-smooth);
+  }
+
+  .category-header h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    transition: var(--transition-smooth);
+  }
+
+  .category-header:hover h3 {
+    color: var(--color-accent);
+  }
+
+  .toggle-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+  }
+
+  .toggle-icon::before, .toggle-icon::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-text-main);
+    transition: var(--transition-smooth);
+  }
+
+  .toggle-icon::before {
+    top: 9px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+  }
+
+  .toggle-icon::after {
+    top: 0;
+    left: 9px;
+    width: 2px;
+    height: 20px;
+  }
+
+  .category-header[aria-expanded="true"] .toggle-icon::after {
+    transform: rotate(90deg);
+    opacity: 0;
+  }
+  
+  .category-header[aria-expanded="true"] h3 {
+    color: var(--color-accent);
+    padding: 0;
+  }
+
+  .category-content {
+    padding-bottom: 2rem;
+  }
+
+  .category-date {
+    padding: 0 0.5rem 0 0; /* top, bottom, right, left */
+    color: var(--color-accent-darker);
+    font-weight: bold;
+    margin: 0 !important;
+  }
+
+  .category-desc {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: auto;
+  }
+
+  .portfolio-grid {
+    column-count: 3;
+    column-gap: 1.5rem;
+  }
+
+  .portfolio-item-card {
+    break-inside: avoid; /* Evita que la tarjeta se corte entre una columna y otra */
+    margin-bottom: 1.5rem;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-smooth);
+  }
+
+  /* Square */
+  .portfolio-item-card.square {
+    grid-column: span 1;
+  }
+
+  /* Vertical */
+  .portfolio-item-card.vertical {
+    grid-row: span 2; 
+    grid-column: span 1;
+  }
+
+  /* Horizontal */
+  .portfolio-item-card.horizontal {
+    grid-row: span 1;
+    grid-column: span 2;
+  }
+
+  .portfolio-item-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    /* height: 100%; */
+    /* object-fit: cover; */
+    transition: transform var(--transition-smooth);
+  }
+
+  .portfolio-item-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .portfolio-item-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    padding: 1.5rem 1rem 1rem;
+    opacity: 0;
+    transition: opacity var(--transition-smooth);
+    pointer-events: none;
+  }
+
+  .portfolio-item-card:hover .item-overlay {
+    opacity: 1;
+  }
+
+  .item-alt {
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: 992px) {
+    .portfolio-grid {
+      column-count: 2; /* 2 columnas en tablets */
+    }
+  }
+
+  @media (max-width: 576px) {
+    .portfolio-grid {
+      column-count: 1; /* 1 columna en móviles */
+    }
+  }
+</style>
