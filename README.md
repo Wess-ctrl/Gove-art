@@ -1,46 +1,22 @@
-# Astro Starter Kit: Basics
+# Portafolio Artístico - Escultora
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este repositorio contiene el código fuente del portafolio profesional para la escultora Beatriz González de la Vega. El sitio está diseñado como una plataforma de visualización de obra escultórica, enfocada en la elegancia, la tipografía cuidada y una experiencia de usuario fluida.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🛠 Tecnologías Utilizadas
 
-## 🚀 Project Structure
+El proyecto está construido utilizando **Astro**, aprovechando su enfoque orientado a componentes y su excelente rendimiento para sitios web orientados a contenido.
 
-Inside of your Astro project, you'll see the following folders and files:
+*   **Framework:** [Astro](https://astro.build/)
+*   **Lenguajes:** HTML5, CSS3, JavaScript (ES6+)
+*   **Estilos:** CSS puro (CSS Variables, Flexbox, Grid, Column-count para maquetación tipo Pinterest)
+*   **Fuentes:** Google Fonts (Inter, Outfit) y Adobe Garamond Pro
+*   **Interacciones:** API nativa `IntersectionObserver` para animaciones al scroll
+
+## 🏗 Estructura del Proyecto
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+/src
+├── components/      # Componentes reutilizables (Hero, Galería, Contacto, Header, Footer)
+├── layouts/         # Layout principal (MainLayout.astro) que gestiona el head y estructura global
+├── pages/           # Rutas del sitio (Home, Galería, Biografía, Contacto)
+└── styles/          # Estilos globales y variables CSS
