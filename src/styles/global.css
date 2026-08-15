@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Outfit:wght@300;400;600&display=swap');
 
-
 @font-face {
   font-family: 'Adobe Garamond Pro';
   src: url('/fonts/AGaramondPro-Regular.woff') format('woff'),
@@ -114,7 +113,7 @@ img {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 4.3rem;
 }
 
 section {
